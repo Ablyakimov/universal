@@ -1,0 +1,159 @@
+.modal
+   &__overlay
+      position: fixed
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      background-color: rgba(38, 45, 51, 0.39)
+      z-index: 10000
+      display: none
+      &--visible
+         display: block
+   &__video
+      position: fixed
+      top: 50%
+      left: 50%
+      height: 77%
+      width: 81%
+      padding: 11px 12px
+      padding-top: 30px
+      background-color: $ligth
+      transform: translate(-50%,-50%)
+      color: $ligth
+      border-radius: 8px
+      z-index: 10001
+      display: none
+      overflow: auto
+      &--visible
+         display: block
+   &__close
+      position: absolute
+      top: 9px
+      right: 18px
+      text-decoration: none
+      cursor: pointer
+   &__iframe
+      width: 100%
+      height: 100%
+   &-video
+      width: 100%
+      height: 100%
+      background-color: #000
+   &__login     
+      position: fixed
+      top: 50%
+      left: 50%
+      height: 200px
+      width: 300px
+      padding: 11px 12px
+      padding-top: 30px
+      background-color: $ligth
+      transform: translate(-50%,-50%)
+      color: $ligth
+      border-radius: 8px
+      z-index: 10001
+      display: none
+      overflow: auto
+      &--visible
+         display: block
+      &-close          
+         position: absolute
+         top: 7px
+         right: 10px
+         text-decoration: none
+         cursor: pointer
+      &-form 
+         height: 100%
+         display: flex
+         flex-direction: column
+         justify-content: space-around
+      &-input 
+         width: 100%         
+         border: none
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 14px
+         line-height: 20px
+         height: 20px
+         padding-right: 10px
+         border: 1px solid #D9DADB
+         border-radius: 10px
+         padding: 15px
+         @include placeholder 
+            color: #939699
+      &-button          
+         display: flex
+         align-items: center
+         justify-content: center
+         border: none
+         border-radius: 20px
+         background-color: $secondary
+         padding: 10px 22px 10px 25px
+         font-family: Lato
+         font-size: 14px
+         line-height: 20px
+         color: $ligth
+         cursor: pointer
+   &__subscribe       
+      position: fixed
+      top: 50%
+      left: 50%
+      height: 170px
+      width: 300px
+      padding: 11px 12px
+      padding-top: 45px
+      background-color: $ligth
+      transform: translate(-50%,-50%)
+      color: $ligth
+      border-radius: 8px
+      z-index: 10001
+      display: none
+      overflow: auto
+      &--visible         
+         display: flex
+      &-form 
+         width: 100%
+      &-wrap 
+         margin-bottom: 20px
+      &-input 
+         width: 100%
+         border: none
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 14px
+         line-height: 20px
+         height: 20px
+         padding-right: 10px
+         border: 1px solid #D9DADB
+         border-radius: 10px
+         padding: 15px
+         @include placeholder 
+            color: #939699
+      &-button       
+         width: 100%
+         display: flex
+         align-items: center
+         justify-content: center
+         border: none
+         border-radius: 20px
+         background-color: $secondary
+         padding: 10px 22px 10px 25px
+         font-family: Lato
+         font-size: 14px
+         line-height: 20px
+         align-items: center
+         color: $ligth
+         cursor: pointer
+      &-close 
+         position: absolute
+         top: 7px
+         right: 10px
+         text-decoration: none
+         cursor: pointer
+		
+
+
+

@@ -1,0 +1,33 @@
+.main 
+   background-color: $bgc
+   height: 475px
+   padding-top: 31px
+.cards 
+   display: flex
+   padding: 25px 25px 30px 25px
+   background: #30363D
+   border-radius: 10px
+   margin-bottom: 31px
+   &__item
+      display: flex
+      flex-direction: row
+      align-items: center
+      &:not(:last-child)
+         padding-right: 25px
+         border-right: 1px solid $text-color
+      &:not(:first-child)
+         padding-left: 25px
+            
+   &__text 
+      color: $ligth
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      margin-right: 15px
+      max-width: 154px
+   &__img 
+      width: 65px
+      height: 65px
+

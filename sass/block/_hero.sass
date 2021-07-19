@@ -1,0 +1,180 @@
+.hero 
+   position: relative
+   background-image: url(../img/hero-bg.png)
+   background-repeat: no-repeat
+   background-size: cover
+   height: 100%
+   padding-bottom: 29px
+   &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+   &-wrapper
+      position: relative
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 740px
+      padding-left: 96px
+      padding-top: 64px       
+      padding-bottom: 30px
+   &__nav
+      position: absolute
+      top: 61px
+      right: -302px
+      display: flex
+      flex-direction: row
+      align-items: center
+
+   &__home 
+      display: flex
+      align-items: flex-start
+      flex-direction: row
+      &-img 
+      &-text 
+         margin-left: 8px
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         color: #FFFFFF
+   &__back 
+      margin-left: 33px
+      display: flex
+      align-items: center
+      flex-direction: row
+      &-img 
+      &-text 
+         margin-left: 8px
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         color: #FFFFFF
+   &__next 
+      margin-left: 22px
+      display: flex
+      align-items: center
+      flex-direction: row
+      &-img
+         margin-left: 8px
+      &-text 
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         color: #FFFFFF
+   &__svg 
+      position: absolute
+      left: 4px
+      top: 152px
+      fill: #ffffff
+      opacity: 0.4
+      cursor: pointer
+   &__category      
+      font-family: Lato
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      margin-bottom: 15px
+   &__title
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 55px
+      line-height: 70px
+      color: #FFFFFF
+      margin-bottom: 15px
+   &__text
+      width: 556px
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      color: #FFFFFF
+      mix-blend-mode: normal
+      opacity: 0.85
+      margin-bottom: 57px
+   &__info
+      display: flex
+   &__time
+      display: flex
+      align-items: center 
+      margin-right: 21px
+      &-img 
+         opacity: 0.85
+         margin-right: 7px
+      &-text
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #FFFFFF
+         mix-blend-mode: normal
+         opacity: 0.85
+   &__like 
+      display: flex
+      align-items: center
+      margin-right: 20px
+      &-img
+         fill: #fff 
+         margin-right: 6px
+      &-text 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #FFFFFF
+         mix-blend-mode: normal
+         opacity: 0.85
+   &__comment 
+      margin-right: 30px
+      display: flex
+      align-items: center
+      &-img 
+         margin-right: 5px
+         fill: #fff
+      &-text 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #FFFFFF
+         mix-blend-mode: normal
+         opacity: 0.85
+   &__share 
+      padding: 10px 25px 10px 20px
+      border: 1px solid rgba(255, 255, 255, 0.5)
+      border-radius: 20px
+      &-img 
+         margin-right: 7px
+      &-text 
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         color: #FFFFFF
+.container-page
+   width: 650px
+   margin: auto
+.bookmark__svg--active
+   fill: #FF4F52
+   opacity: 1
+

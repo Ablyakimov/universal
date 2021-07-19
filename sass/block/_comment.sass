@@ -1,0 +1,220 @@
+.comment 
+   background-color: $ligth
+   padding-top: 88px
+   padding-bottom: 30px
+   &__button
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-top: 10px 
+      padding-bottom: 10px 
+      background-color: $ligth
+      border: 1px solid #D9DADB
+      border-radius: 25px
+      margin-bottom: 68px
+      &-img 
+         margin-right: 7px
+      &-text 
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         color: #262D33
+   &__write
+   &-write 
+      width: 750px
+      background-color: #F5F5F5
+      padding: 30px 40px 35px 126px
+      border-radius: 10px
+      &__title 
+         font-family: Roboto Slab
+         font-style: normal
+         font-weight: bold
+         font-size: 20px
+         line-height: 25px
+         color: #262D33
+         margin: 0
+         margin-bottom: 15px
+      &__wrap 
+         position: relative
+      &__avatar 
+         position: absolute
+         left: -96px
+         width: 75px
+         height: 75px
+         border-radius: 50%
+      &__input 
+         width: 584px
+         height: 130px
+         background: #FFFFFF
+         border: 1px solid #D9DADB
+         border-radius: 10px
+         resize: none
+         padding: 10px
+         &-wrap
+            position: relative
+            margin-bottom: 15px
+            &::before
+               content: ''
+               position: absolute
+               left: -11px
+               top: 29%
+               width: 0
+               height: 0
+               border-top: 13px solid transparent
+               border-right: 15px solid #fff
+               border-bottom: 13px solid transparent
+               transform: translateY(-50%)
+               pointer-events: none
+               z-index: 20
+      &__button 
+         display: flex
+         align-items: center
+         border-radius: 20px
+         background-color: #4592FF
+         padding: 10px 20px 10px 25px
+         &-text
+            margin-right: 6px 
+            font-family: Lato
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: $ligth
+         &-img 
+   &-container 
+      width: 950px
+      margin: auto
+   &-wrap
+      width: 750px
+   &-head 
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding-bottom: 26px
+      &__wrap
+         display: flex
+         align-items: center
+      &__title 
+         margin: 0
+         margin-right: 11px
+         font-family: Roboto Slab
+         font-style: normal
+         font-weight: bold
+         font-size: 40px
+         line-height: 50px
+         color: #262D33
+      &__number 
+         padding-top: 5px
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 40px
+         line-height: 50px
+         text-transform: uppercase
+         color: #939699
+      &__form 
+      &__button 
+         display: flex
+         align-items: center
+         border: 1px solid #D9DADB
+         border-radius: 20px
+         padding: 10px 20px
+         background-color: $ligth
+         &-img 
+            margin-right: 15px
+         &-text 
+            font-family: Lato
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: #262D33
+   &-wrapper 
+   &-item 
+      padding-top: 19px
+      padding-bottom: 30px
+      border-top: 1px solid #D9DADB
+      display: flex
+      &__img
+         width: 75px
+         height: 75px
+         border-radius: 50%
+         margin-right: 14px
+      &__name
+         &-wrap
+            display: flex
+            align-items: center
+            margin-bottom: 10px
+      &__wrap 
+         &-wrap 
+      &__title 
+         margin: 0
+         margin-right: 10px
+         font-family: Roboto Slab
+         font-style: normal
+         font-weight: bold
+         font-size: 16px
+         line-height: 25px
+         color: #262D33
+      &__date 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #939699
+      &__text 
+         margin: 0
+         width: 570px
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 18px
+         line-height: 30px
+         color: #4B5157
+         margin-bottom: 15px
+      &__wrapper 
+         display: flex
+      &__reply 
+         display: flex
+         align-items: center
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 12px
+         line-height: 15px
+         color: #262D33
+         margin-right: 15px
+         &-img 
+            margin-right: 5px
+         &-text 
+      &__like 
+         display: flex
+         align-items: center
+         &-like 
+            margin-right: 10px
+            cursor: pointer
+            fill: #BCBFC2
+            &--active
+               fill: green
+         &-number 
+            font-family: Lato
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            margin-right: 10px
+         &-dislike
+            cursor: pointer
+            fill: #BCBFC2
+            &--active
+               fill: red
+      &--reply 
+         padding-left: 90px
+      &--hidden
+         display: none
+      &--visible
+         display: flex

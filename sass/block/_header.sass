@@ -1,0 +1,337 @@
+// mixin
+@import '../_mixin'
+.header 
+   background-color: $ligth
+   &__search       
+      display: flex
+      align-items: center
+      padding-left: 26px
+      width: 500px
+      &--mobile
+         margin-bottom: 20px
+   &-top 
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #D9DADB
+      max-height: 50px
+      &__menu
+         &-button
+            display: none
+            width: 14px
+            height: 11px
+            padding: 0
+            margin-right: 16px
+            align-items: flex-start
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: #fff
+            cursor: pointer
+      &__section 
+         display: flex
+         flex-direction: row
+         align-items: center
+         padding-right: 25px
+         border-right: 1px solid #D9DADB 
+         position: relative
+         z-index: 101    
+      &__section-button 
+
+      &__subscribe 
+         display: flex
+         margin-right: 59px         
+         &--mobile
+            margin-top: 20px
+            margin-bottom: 20px
+      &__login
+         display: flex
+         align-items: center
+      &__wrapper
+         display: flex
+         flex-direction: row
+      &__wrap
+         display: flex
+         flex-direction: row 
+         padding-top: 7px
+         align-items: center
+   &-center 
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+.section-button 
+   display: flex
+   width: 14px
+   height: 11px
+   padding: 0
+   margin-right: 16px
+   align-items: flex-start
+   justify-content: space-between
+   flex-direction: column
+   border: none
+   background-color: #fff
+   cursor: pointer
+   &__line 
+      width: 14px
+      height: 1px
+      background-color: #BCBFC2
+
+   &__line--little 
+      width: 12px
+
+.sections 
+   font-family: Lato
+   font-weight: 700
+   font-size: 14px
+   line-height: 20px
+
+.search 
+   &__input 
+      border: none
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      height: 20px
+      padding-right: 10px 
+      width: 100%
+      @include placeholder 
+         color: #939699
+      &--mobile
+         background-color: inherit
+         color: $ligth
+         width: auto
+   &__img
+      width: 17px
+      height: 18px
+      margin-right: 11px
+
+.subscribe 
+   &-background
+      width: 66px
+      height: 44px
+      background-color: #BCBFC2
+      display: flex
+      align-items: flex-end
+      margin-right: 10px
+      margin-left: 42px
+
+   &__img 
+      margin: auto
+      width: 60px
+      height: 41px
+   &__button 
+      font-family: Lato
+      font-weight: 800
+      font-size: 12px
+      line-height: 15px
+      color: $bgc
+      margin-top: 5px
+      &--mobile
+         color: $ligth
+   &__text 
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+      &--mobile
+         color: $ligth
+   &__info
+      display: flex
+      flex-direction: column
+
+.login
+
+   &__img 
+      margin-right: 12px
+   &__link 
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+
+.left-logo 
+   display: flex
+   align-items: center
+   margin-left: 35px
+   &__img 
+      width: 100px
+      height: 84px
+   &__text 
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      margin-left: 12px
+
+
+.logo 
+   &--mobile
+      display: none
+.day-info 
+   display: flex
+   justify-content: space-between
+   min-width: 292px
+   margin-left: 48px
+   &--mobile
+      align-items: center
+      flex-direction: column
+   &__date 
+
+   &__date-info 
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      &--mobile
+         color: $ligth
+   &__weather 
+      display: flex
+      align-items: center
+   &__weather-img 
+      margin-right: 11px
+   &__weather-text 
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      &--mobile
+         color: $ligth
+
+
+.nav 
+   background: $bgc
+   padding: 17px
+   padding-bottom: 18px
+   &-bottom
+      display: none
+   &-ul 
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 0
+      margin: 0
+      list-style: none
+      &__list 
+
+      &__link 
+         font-family: Lato
+         font-size: 14px
+         line-height: 20px
+         letter-spacing: 0.5px
+         text-transform: uppercase
+         color: #FFFFFF
+.menu-button 
+   &__line
+      width: 14px
+      height: 1px
+      background-color: #333
+		 
+
+
+.section-nav 
+   display: none
+   background-color: $bgc
+   position: fixed
+   left: 0
+   top: 0  
+   width: 300px
+   height: 100vh
+   z-index: 100
+   overflow-y: auto
+   transform: translateX(-100%);
+   &--active
+      transform: translateX(0%);
+   &__name 
+      font-family: Lato
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      color: $ligth
+
+   &__container 
+      display: flex
+      padding: 25px 25px 25px 25px
+      flex-direction: column
+
+   &__wrapper-first 
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+
+   &__wrapper-second 
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+   &__wrapper-third 
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+   &__wrapper-four
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      
+   &__item 
+      width: 130px
+   
+
+   &__item-title 
+      font-family: Lato
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      color: $ligth
+
+   &__ul 
+      list-style: none
+      padding: 0
+
+
+   &__ul-item 
+      margin-bottom: 5px
+   
+
+   &__link 
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $ligth
+
+   
+
+
+.close
+   &-button
+      border: none
+      background-color: transparent
+      position: relative
+      margin-top: 15px
+      margin-left: 25px
+      cursor: pointer
+   &-nav
+      display: flex
+      justify-content: flex-end
+      margin-top: 15px
+      margin-right: 26px
+.empty 
+   height: 40px
+

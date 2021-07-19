@@ -1,0 +1,278 @@
+  
+.bookmark 
+   padding-top: 60px
+   padding-bottom: 60px
+   &-wrapper
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: flex-start
+   &__svg 
+      position: absolute
+      top: 24px
+      right: 3px
+      fill: #BCBFC2
+      cursor: pointer
+      &--active         
+         fill: #FF4F52
+   &-main 
+      max-width: 848px
+      background-color: $ligth
+      border-radius: 10px
+      padding: 0 28px
+      &__item 
+         height: 100%
+         display: flex
+         position: relative
+         padding: 25px 0px 25px 0px
+         align-items: start
+         &:not(:first-child)
+            border-top: 1px solid #D9DADB
+      &__img 
+         margin-right: 25px
+         object-fit: cover
+      &__wrap 
+         width: 437px
+      &__category
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 12px
+         line-height: 15px
+         letter-spacing: 0.5px
+         text-transform: uppercase
+      &__title 
+         font-family: Roboto Slab
+         font-style: normal
+         font-weight: bold
+         font-size: 20px
+         line-height: 25px
+         color: #262D33
+         margin-top: 9px
+         margin-bottom: 10px
+      &__text 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 14px
+         line-height: 20px
+         color: #4B5157
+         margin-bottom: 20px
+         &--mb
+            margin-bottom: 42px
+      &__info
+         display: flex
+         flex-direction: row 
+         align-items: center
+      &__date 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #939699
+         margin-right: 11px
+      &__comment 
+         display: flex
+         align-items: center
+         margin-right: 10px
+      &__comment-img 
+         margin-right: 5px
+      &__comment-number 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #939699
+      &__like          
+         display: flex
+         align-items: center
+      &__like-img
+         fill: #BCBFC2
+         margin-right: 5px
+      &__like-number 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #939699
+   &-recomend
+      width: 263px
+      background-color: $ligth
+      border-radius: 10px
+      display: flex
+      flex-direction: column
+      &__title 
+         margin: 0
+         padding-top: 20px
+         padding-bottom: 19px
+         padding-left: 25px
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         letter-spacing: 0.5px
+         text-transform: uppercase
+         color: $bgc
+         border-bottom: 1px solid #D9DADB
+      &__link
+         padding-top: 11px
+         padding-bottom: 14px
+         text-align: center
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         color: $bgc         
+         border-top: 1px solid #D9DADB
+      &__wrapper 
+         padding: 0px 25px 0px 25px
+      &__item
+         position: relative
+         display: flex
+         padding-top: 17px
+         padding-bottom: 17px
+         z-index: 1
+         &:not(:first-child)
+            border-top: 1px solid #D9DADB             
+         &-img 
+            margin-right: 10px
+            width: 60px
+            height: 60px
+         &-wrapper 
+            display: flex
+            flex-direction: column
+         &-title 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+            margin: 0
+            margin-bottom: 4px
+         &-time 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #939699         
+         &--first 
+            &::after
+               content: '1'  
+               position: absolute
+               right: 0  
+               top: 25px
+               width: 41px
+               height: 50px
+               font-family: Lato
+               font-style: normal
+               font-weight: normal
+               font-size: 70px
+               line-height: 50px
+               color: $bgc
+               opacity: 0.08
+               z-index: 2
+         &--second 
+            &::after
+               content: '2'  
+               position: absolute
+               right: 0  
+               top: 25px
+               width: 41px
+               height: 50px
+               font-family: Lato
+               font-style: normal
+               font-weight: normal
+               font-size: 70px
+               line-height: 50px
+               color: $bgc
+               opacity: 0.08
+               z-index: 2
+         &--third
+            &::after
+               content: '3'  
+               position: absolute
+               right: 0  
+               top: 25px
+               width: 41px
+               height: 50px
+               font-family: Lato
+               font-style: normal
+               font-weight: normal
+               font-size: 70px
+               line-height: 50px
+               color: $bgc
+               opacity: 0.08
+               z-index: 2 
+         &--four
+            &::after
+               content: '4'  
+               position: absolute
+               right: 0  
+               top: 25px
+               width: 41px
+               height: 50px
+               font-family: Lato
+               font-style: normal
+               font-weight: normal
+               font-size: 70px
+               line-height: 50px
+               color: $bgc
+               opacity: 0.08
+               z-index: 2 
+         &--five
+            &::after
+               content: '5'  
+               position: absolute
+               right: 0  
+               top: 25px
+               width: 41px
+               height: 50px
+               font-family: Lato
+               font-style: normal
+               font-weight: normal
+               font-size: 70px
+               line-height: 50px
+               color: $bgc
+               opacity: 0.08
+               z-index: 2 
+         &--six 
+            &::after
+               content: '6'  
+               position: absolute
+               right: 0  
+               top: 25px
+               width: 41px
+               height: 50px
+               font-family: Lato
+               font-style: normal
+               font-weight: normal
+               font-size: 70px
+               line-height: 50px
+               color: $bgc
+               opacity: 0.08
+               z-index: 2
+         &--seven 
+            &::after
+               content: '7'  
+               position: absolute
+               right: 0  
+               top: 25px
+               width: 41px
+               height: 50px
+               font-family: Lato
+               font-style: normal
+               font-weight: normal
+               font-size: 70px
+               line-height: 50px
+               color: $bgc
+               opacity: 0.08
+               z-index: 2
+		
+

@@ -1,0 +1,355 @@
+.grid 
+   padding-top: 316px
+   &-wrapper
+      display: flex
+      &__comment
+         &-wrap
+            margin-left: 29px
+      &__big
+         display: flex
+         flex-direction: column
+         &-up 
+            display: flex
+         &-down 
+            display: flex
+            margin-top: 30px
+         &-wrapper 
+            margin-left: 30px
+            display: flex
+            justify-content: space-between
+         &-item
+            height: 100%
+            width: 263px
+            border-radius: 10px
+            background-color: $ligth
+            overflow: hidden
+            &--mobile
+               display: none
+         &-card
+         &-img 
+         &-two 
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+      &__item 
+         background-color: $ligth
+         border-radius: 10px
+         width: 263px
+         height: 170px
+         padding: 25px 25px 30px 25px
+         &:first-child
+            margin-right: 29px
+         &-title 
+            margin: 0px
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: #262D33
+            &--cat
+               padding: 15px 25px 30px 25px
+         &-text 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $text-color
+            margin-top: 7px
+            margin-bottom: 7px
+         &-date 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #939699
+   &-item 
+      width: 555px
+      height: 370px
+      border-radius: 10px
+      background-color: $ligth
+      padding-top: 15px
+      overflow: hidden
+      &__info 
+         width: 265px
+         padding-top: 20px         
+         padding-left: 35px
+      &__img
+         object-fit: cover
+         object-position: 20%
+      &__wrap
+         display: flex
+      &__cateory
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 12px
+         line-height: 15px
+         letter-spacing: 0.5px
+         text-transform: uppercase
+         color: #6E99AE
+      &__title
+         font-family: Roboto Slab
+         font-style: normal
+         font-weight: bold
+         font-size: 25px
+         line-height: 30px
+         color: $bgc
+         margin-top: 20px
+         margin-bottom: 25px
+      &__text 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 14px
+         line-height: 20px
+         color: $text-color         
+         margin-bottom: 50px
+      &__comment 
+         display: flex
+         align-items: center
+         border-top: 1px solid #D9DADB
+         padding-top: 9px
+         padding-left: 38px
+         &-avatar 
+            border-radius: 50% 
+            width: 30px
+            height: 30px            
+            margin-right: 10px
+         &-name 
+            font-family: Lato
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: $bgc
+            &--mobile
+               display: none
+         &-text
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $text-color
+            margin-right: 15px
+   &-popular
+      position: relative
+      width: 263px
+      height: 370px
+      background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/grid-hand.jpg)
+      background-repeat: no-repeat
+      background-position: center center
+      border-radius: 10px
+      background-size: 109%
+      &__label
+         position: absolute
+         left: 20px
+         top: 18px
+         height: 25px
+         border: none 
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 12px
+         line-height: 15px
+         text-align: center
+         color: $ligth
+         border-radius: 3px
+         padding: 5px 12px
+         background: #3DC47E
+      &__category
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 12px
+         line-height: 15px
+         letter-spacing: 0.5px
+         text-transform: uppercase
+         color: #E7D9FF
+         margin-left: 6px
+      &__title
+         font-family: Roboto Slab
+         font-style: normal
+         font-weight: bold
+         font-size: 16px
+         line-height: 25px
+         letter-spacing: 0.5px
+         text-transform: uppercase
+         color: $ligth
+         margin-bottom: 18px
+         margin-top: 10px
+         margin-left: 6px
+      &__wrap
+         height: 100%
+         padding: 18px 35px 18px 20px
+         display: flex
+         flex-direction: column
+         justify-content: space-between
+         align-items: flex-start
+         &-user
+            display: flex
+      &__user 
+         display: flex
+         margin-left: 6px
+      &__img 
+         height: 45px
+         width: 45px
+         border-radius: 50%
+         margin-right: 10px
+      &__wrapper 
+         display: flex
+         flex-direction: column
+      &__name 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 14px
+         line-height: 20px
+         color: $ligth
+         mix-blend-mode: normal
+         opacity: 0.85
+      &__date 
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: $ligth
+         mix-blend-mode: normal
+         opacity: 0.4
+         margin-right: 10px
+      &__comment
+         display: flex
+         align-items: center
+         margin-right: 10px
+         &-img             
+            margin-right: 5px
+         &-number 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $ligth
+            mix-blend-mode: normal
+            opacity: 0.4
+      &__like 
+         display: flex
+         align-items: center
+         &-img 
+            fill: $ligth
+            margin-right: 5px
+         &-number 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $ligth
+            mix-blend-mode: normal
+            opacity: 0.4
+      &__wrapper
+         display: flex
+         height: 100%
+         justify-content: flex-end
+   &-column 
+      display: flex
+      flex-direction: column
+      background-color: #6E99AE
+      border-radius: 10px
+      max-width: 263px
+      &__wrapper
+         padding: 0 25px
+      &__title    
+         font-family: Roboto Slab
+         font-style: normal
+         font-weight: bold
+         font-size: 20px
+         line-height: 25px
+         color: $ligth
+         margin-top: 45px
+         margin-bottom: 15px
+         position: relative
+         z-index: 2
+         &::before
+            content: ''
+            background-image: url(../img/svg/quote.svg)
+            position: absolute
+            top: -11px
+            left: -9px
+            width: 40px
+            height: 40px
+            z-index: -1
+         &-main
+            padding-top: 22px
+            padding-left: 26px
+            padding-bottom: 18px
+            font-family: Lato
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $ligth
+            margin: 0
+            text-align: left
+            border-bottom: 1px solid #B4D1E0
+      &__item 
+         padding-left: 9px
+         padding-bottom: 40px            
+         &:nth-child(2)
+            border-top: 1px solid #B4D1E0
+            border-bottom: 1px solid #B4D1E0
+            
+      &__user 
+         display: flex
+         align-items: center
+         &-img 
+            border-radius: 50%
+            margin-right: 10px
+         &-info 
+            display: flex
+            flex-direction: column
+         &-name 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #D1E2EB
+         &-profesion 
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #D1E2EB
+      &__link
+         padding-top: 14px
+         padding-bottom: 13px
+         font-family: Lato
+         font-style: normal
+         font-weight: bold
+         font-size: 14px
+         line-height: 20px
+         color: $ligth
+         text-align: center
+         border-top: 1px solid #B4D1E0
+
+   &-comment 
+      display: flex
+      align-items: center
+      &__img
+         margin-right: 5px
+      &__number       
+         font-family: Lato
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 15px
+         color: #939699
+
